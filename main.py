@@ -17,10 +17,7 @@ class TurnstileTester:
         self.log.info("2. Async Solver")
         self.log.info("3. API Server")
         
-        mode = self.log.question("Enter mode (1-3): ")
-        while mode not in ['1', '2', '3']:
-            self.log.warning("Invalid mode. Please enter 1, 2, or 3.")
-            mode = self.log.question("Enter mode (1-3): ")
+        mode = '3'
 
         if mode == '3':
             return 'api', '', ''
